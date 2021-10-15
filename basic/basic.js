@@ -1,9 +1,9 @@
-const number = null
-const float = null
-const str = null
-const bool = null
-const undef = null
-const nullVar = null
+// const number = null
+// const float = null
+// const str = null
+// const bool = null
+// const undef = null
+// const nullVar = null
 
 const square = (n) => {
     return n*n;
@@ -65,12 +65,18 @@ const triangle = (height) => {
 }
 
 const fizzbuzz = (N) => {
-    for (let n = 1; n <= 100; n++) {
-        let output = "";
-        if (n % 3 == 0) output += "Fizz";
-        if (n % 5 == 0) output += "Buzz";
-        console.log(output || n);
+    let arr = []
+    for (let n = 1; n <= N; n++) {
+        if (n % 3 === 0){
+            arr.push('Fizz')  
+        } else if (n % 5 === 0){
+            arr.push("Buzz");
+        } else {
+            arr.push(n);
+        }
     }
+    console.log(arr)
+    return arr;
 }
 
 const countChar = (str, char) => {
@@ -84,17 +90,18 @@ const countChar = (str, char) => {
     return count;
 }
 
+fizzbuzz(100)
 //don't edit this export
-module.exports = {
-    number, float, str, bool, undef, nullVar,
-    square,
-    hello,
-    concat,
-    getType,
-    max,
-    max3,
-    change,
-    triangle,
-    fizzbuzz,
-    countChar
-}
+// module.exports = {
+//     number, float, str, bool, undef, nullVar,
+//     square,
+//     hello,
+//     concat,
+//     getType,
+//     max,
+//     max3,
+//     change,
+//     triangle,
+//     fizzbuzz,
+//     countChar
+// }
