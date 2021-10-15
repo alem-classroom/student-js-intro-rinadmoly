@@ -89,8 +89,6 @@ const countChar = (str, char) => {
     }
     return count;
 }
-
-fizzbuzz(100)
 //don't edit this export
 // module.exports = {
 //     number, float, str, bool, undef, nullVar,
